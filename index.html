@@ -1,0 +1,336 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Заголовок страницы</title> 	
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.0a2.min.css" />
+<script src="jquery-1.4.4.min.js"></script>
+<script src="jquery.mobile-1.0a2.min.js"></script>
+<style type="text/css">
+div.footer:before {
+    position: fixed;
+    bottom: 0;
+    top: -10px;
+    width: 100%;
+    height: 10px;
+    display: block;
+    content: '\0000a0';
+    opacity: 0.7;
+}
+
+
+#header {
+	position: fixed;
+	top: 0;
+	display: block;
+}
+
+div.navbar:before {
+	position: fixed;
+    bottom: 0;
+    top: -10px;
+    width: 100%;
+    height: 10px;
+    display: block;
+    content: '\0000a0';
+    opacity: 0.7;
+}
+
+.select {
+	font-weight: 600;
+}
+</style>
+
+</head> 
+<body> 
+
+<div data-role="page" id="main" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Т.А.</h1>
+		<a href="#help" data-icon="gear" class="ui-btn-right">Инфо</a>
+		<a href="#second" data-icon="grid" class="ui-btn-left">Содержание</a>
+	</div>
+	<div data-role="content">
+	<h1 align="center"><br>Теория Алгоритмов</h1>	
+		<p align="justify"><span class="select">Тео́рия алгори́тмов</span> — наука, находящаяся на стыке математики и информатики, изучающая общие свойства и закономерности алгоритмов и разнообразные формальные модели их представления. К задачам теории алгоритмов относятся формальное доказательство алгоритмической неразрешимости задач, асимптотический анализ сложности алгоритмов, классификация алгоритмов в соответствии с классами сложности, разработка критериев сравнительной оценки качества алгоритмов и т. п. Вместе с математической логикой теория алгоритмов образует теоретическую основу вычислительных наук.
+		</p>
+		<h2>Возникновение теории алгоритмов</h2>
+		<p align="justify">Развитие теории алгоритмов начинается с доказательства К. Гёделем теорем о неполноте формальных систем, включающих арифметику, первая из которых была доказана в 1931 г. Возникшее в связи с этими теоремами предположение о невозможности алгоритмического разрешения многих математических проблем (в частности, проблемы выводимости в исчислении предикатов) вызвало необходимость стандартизации понятия алгоритма. Первые стандартизованные варианты этого понятия были разработаны в 30-х годах XX века в работах А. Тьюринга, А. Чёрча и Э. Поста. Предложенные ими машина Тьюринга, машина Поста и лямбда-исчисление Чёрча оказались эквивалентными друг другу. Основываясь на работах Гёделя, С. Клини ввел понятие рекурсивной функции, также оказавшееся эквивалентным вышеперечисленным.
+
+Одним из наиболее удачных стандартизованных вариантов алгоритма является введённое А. А. Марковым понятие нормального алгоритма. Оно было разработано десятью годами позже работ Тьюринга, Поста, Чёрча и Клини в связи с доказательством алгоритмической неразрешимости ряда алгебраических проблем.
+
+Следует отметить также немалый вклад в теорию алгоритмов, сделанный Д. Кнутом, A. Ахо и Дж. Ульманом. Одной из лучших работ на эту тему является книга «Алгоритмы: построение и анализ» Томаса Х. Кормена, Чарльза И. Лейзерсона, Рональда Л. Ривеста, Клиффорда Штайна.</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page2" data-role="button" data-icon="arrow-l" class="ui-disabled ui-btn-left">Предыдущая</a></li>	
+		<li><a href="#page2" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+<div data-role="page" id="second" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Содержание</h1>
+		<a href="#main" data-icon="home" class="ui-btn-right">Главная</a>
+	</div>
+	<div data-role="content">
+	<br><br>
+	<div data-role="collapsible" data-collapsed="true">
+   <h3>Лекции</h3>
+   <ul data-role="listview">
+   <li><a href="#main">Теория алгоритмов</a></li>
+   <li><a href="#page2">Основные сведенья об алгоритмах</a></li>
+   <li><a href="#page3">Линейные алгоритмы</a></li>
+   <li><a href="#page4">Разветвляющиеся алгоритмы</a></li>
+   <li><a href="#page5">Циклические алгоритмы</a></li>
+   <li><a href="#page6">Массивы</a></li>
+   </ul>
+</div>
+	<div data-role="collapsible" data-collapsed="true">
+   <h3>Практическая часть</h3>
+   <ul data-role="listview">
+   <li><a href="#page01">Линейные и разветвляющиеся алгоритмы</a></li>
+   <li><a href="#page02">Циклы</a></li>
+   <li><a href="#page03">Одномерные массивы</a></li>
+   <li><a href="#page04">Двумерные массивы</a></li>
+   </ul>
+</div>
+<div data-role="button">
+<a href="#help" data-icon="info" class="ui-btn-left">Помощь</a>
+</div>
+	
+	</div>
+</div>
+
+<div data-role="page" id="third" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Помощь</h1>
+	</div>
+	<div data-role="content">	
+		<p><br>Пример мультистраничности</p>		
+	</div>
+</div>
+
+<div data-role="page" id="help" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Помощь</h1>
+	</div>
+	<div data-role="content">
+	<h2 align="center"><br>Порядок освоения дисциплины "Теория алгоритмов":</h2>	
+		<br>
+		<ul>
+			<li><p>Лекция: Теория алгоритмов;</p></li>
+			<li><p>Лекция: Основные сведенья об алгоритмах</p></li>
+			<li><p>Лекция: Линейные алгоритмы</p></li>
+			<li><p>Лекция: Разветвляющиеся алгоритмы</p></li>
+			<li><p>Практика: Линейные и разветвляющиеся алгоритмы</p></li>
+			<li><p>Лекция: Циклические алгоритмы</p></li>
+			<li><p>Практика: Циклы</p></li>
+			<li><p>Лекция: Массивы</p></li>
+			<li><p>Практика: Одномерные массивы</p></li>
+			<li><p>Практика: Двумерные массивы</p></li>
+		</ul>		
+	</div>
+</div>
+
+
+<div data-role="page" id="page2" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Лекции</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Основные сведенья об алгоритмах</h1>
+		<h2 align="left">Определения:</h2>
+		<p align="justify">На основании свойств алгоритмов дается следующее определение алгоритма:<br>
+		"Алгоритм - это последовательность математических, логических или вместе взятых операций, отличающихся детерменированностью, массовастью, направленностью и приводящая к решению всех задач данного класса за конечное число шагов"</p>
+		<h3 align="left">Алгоритмизация - это процесс составления алгоритма.</h3>
+		<h3 align="left">Программа - это способ записи алгоритма.</h3>	
+		<p align="justify">Каждое отдельное действие алгоритма называют командой.</p>
+		<h2 align="left">Свойства:</h2>
+		<ul>
+			<li><p>Дискретность - прерывность, раздельность. Каждое действие, предусмотренное алгоритмом, исполняется только после того, как закончилось исполнение предыдущего.</p></li>
+			<li><p>Определенность - каждое правило алгоритма должно быть четким, однозначным и не оставлять места для произвола.</p></li>
+			<li><p>Результативность (конечность) - алгоритм должен приводить к решению задачи за конечное число шагов.</p></li>
+			<li><p>Массовость - алгоритм решения задачи разрабатывается в общем виде, то есть, он должен быть применим для некоторого класса задач, различающихся только исходными данными. При этом исходные данные могут выбираться из некоторой области, которая называется областью применимости алгоритма.</p></li>
+		</ul>
+
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#main" data-role="button" data-icon="arrow-l">Предыдущая</a></li>	
+		<li><a href="#page3" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+
+<div data-role="page" id="page3" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Лекции</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Линейные алгоритмы</h1>
+		<h3>Линейный алгоритм - набор команд (указаний), выполняемых последовательно во времени друг за другом.</h3>
+		<h3>Для записи простейшей линейной программы требуются операторы присваивания и ввода-вывода данных.</h3>	
+		<h2 align="left">Операторы:</h2>	
+		<p><span>Оператор присваивания</span></p>
+		<p>При выполнении этого оператора сначала вычисляется значение выражения, а затем это значение присваивается переменной<br>
+		a:=1; b:=a+2; c:='Пример'.</p>
+
+		<p><span>Оператор ввода данных</span></p>
+		<p>При выполнении данного оператора пользователь с клавиатуры должен ввести значения указанных переменных. Значения должны соответствовать типам переменных, разделять их при вводе нужно клавишей Enter<br>
+		Read(список_переменных); Readln(список_переменных).</p>
+
+		<p><span>Оператор ввода данных</span></p>
+		<p>
+		Write('комментарий', список_переменных); Writeln('комментарий', список_переменных).</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page2" data-role="button" data-icon="arrow-l">Предыдущая</a></li>	
+		<li><a href="#page4" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+
+<div data-role="page" id="page4" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Лекции</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Разветвляющиеся алгоритмы</h1>
+		<h4>Разветвляющийся алгоритм - алгоритм, содержащий хотя бы одно условие, в результате проверки которого может осуществляться разделение на несколько параллельных ветвей алгоритма.</h4>
+		<h4>Признаком разветвляющегося алгоритма является наличие операций условного перехода, когда происходит проверка истинности некоторого логического выражения (проверяемое условие) и в зависимости от истинности или ложности проверяемого условия для выполнения выбирается та или иная ветвь алгоритма.</h4>		
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page3" data-role="button" data-icon="arrow-l">Предыдущая</a></li>	
+		<li><a href="#page5" data-role="button" data-icon="arrow-r" >Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+<div data-role="page" id="page5" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Лекции</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Циклические алгоритмы</h1>
+		<h4>Циклы с предусловием, используются тогда, когда неизвестно, сколько раз нужно выполнить тело цикла.</h4>
+		<h4>Циклы с постусловием похожи на циклы с предусловием, но в них условие находится после тела цикла.</h4>
+		<h4>Циклы с предусловием, используются тогда, когда заранее определенное число повторений.</h4>
+		<h4>Цикл называется вложенныи, если он находится в теле другого цикла.</h4>		
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page4" data-role="button" data-icon="arrow-l">Предыдущая</a></li>	
+		<li><a href="#page6" data-role="button" data-icon="arrow-r" >Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+<div data-role="page" id="page6" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Лекции</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Массивы</h1>
+		<h4>Массив - это группа однотипных элементов, имеющих общее имя и расположенных в памяти рядом.</h4>	
+		<h4>Двумерный массив - это одномерный массив, элементами которого являются одномерные массивы. Другими словами, это набор однотипных данных, имеющий общее имя, доступ к элементам которого осуществляется по двум индексам. Наглядно двумерный массив удобно представлять в виде таблицы, в которой n строк и m столбцов, а под ячейкой таблицы, стоящей в i-й строке и j-м столбце понимают некоторый элемент массива a[i,j].</h4>	
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page5" data-role="button" data-icon="arrow-l">Предыдущая</a></li>	
+		<li><a href="#" data-role="button" data-icon="arrow-r" class="ui-disabled ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+
+<div data-role="page" id="page01" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Практика</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Линейные и разветвляющиеся алгоритмы</h1>
+		<h2>Для задач постройте блок-схемы и напишите программный код Pascal</h2>
+		<p>Задача №1: Составьте задачу на сложение, вычетание, умножение и деление двух чисел.<br><br>
+		Задача №2: Дано натуральное число. Вывести 1 на экран, если число положительное, если отрицательное, вывести -1. Если число = 0, тогда вывести сообщение об ошибке.<br><br>
+		Задача №3: Написать алгоритм работы светафора.</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#" data-role="button" data-icon="arrow-l" class="ui-disabled ui-btn-left">Предыдущая</a></li>	
+		<li><a href="#page02" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+<div data-role="page" id="page02" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Практика</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Циклы</h1>
+		<h2>Для задач постройте блок-схемы и напишите программный код Pascal</h2>
+		<p>Задача №1: Дано натуральное число. Определить произведение его цифр, больших семи.<br><br>
+		Задача №2: Дано натуральное число. Определить сколько раз в нем встречается последняя цифра.<br><br>
+		Задача №3: Дано натуральное число. Определить порядковый номер его максимальной цифры, считая номера с начала.</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page01" data-role="button" data-icon="arrow-l" >Предыдущая</a></li>	
+		<li><a href="#page03" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+<div data-role="page" id="page03" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Практика</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Одномерные массивы</h1>
+		<h2>Для задач постройте блок-схемы и напишите программный код Pascal</h2>
+		<p>Задача №1: Создать одномерный массив из 20 чисел со значениями в диапозоне [-7;23]. В созданном массиве найти максимальное значение и вывести на экран.<br><br>
+		Задача №2: Создать одномерный массив из 50 чисел, значения которого вводятся с клавиатуры. В созданном массиве подсчитать количество положительных чисел и отрицательных.<br><br>
+		Задача №3: Дан одномерный массив Сделать все элементы массива четными (меньше чем изначальное значение) и сортировку в порядке возрастания. Осуществлять повторы пока не перестанут вноситься изменения.</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page02" data-role="button" data-icon="arrow-l" >Предыдущая</a></li>	
+		<li><a href="#page04" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+<div data-role="page" id="page04" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Практика</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Двумерные массивы</h1>
+		<h2>Для задач постройте блок-схемы и напишите программный код Pascal</h2>
+		<p>Задача: Дан двумерный массив размером 10х11, значения которого вводятся с клавиатуры. Определить: а) сумму четных элементов массива; б) количество элементов массива, меньших 50;3. После вывода ответа на вторую задачу сделать реверс в 3 строке и 5 столбце.</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page03" data-role="button" data-icon="arrow-l" >Предыдущая</a></li>	
+		<li><a href="#" data-role="button" data-icon="arrow-r" class="ui-disabled ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+</body>
+</html>
